@@ -2,7 +2,9 @@ package com.godsonpeya.service
 
 import com.godsonpeya.entity.User
 import com.godsonpeya.repository.UserRepository
-
+/**
+ * La couche de traitement  des utilisateurs qui fait appel a la couche d'accès aux données  userRepository
+ */
 class UserService(private val userRepository: UserRepository = UserRepository()) {
 
     fun inscription(user: User): String {

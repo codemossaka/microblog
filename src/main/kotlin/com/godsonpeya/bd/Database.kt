@@ -3,6 +3,10 @@ package com.godsonpeya.bd
 import com.godsonpeya.entity.Post
 import com.godsonpeya.entity.User
 
+
+/**
+ * Le simulateur de la base de donnee
+ */
 object Database {
     val POSTS: MutableList<Post> = mutableListOf(
         Post(id = 1,

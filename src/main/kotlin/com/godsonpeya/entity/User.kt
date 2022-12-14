@@ -3,6 +3,9 @@ package com.godsonpeya.entity
 import java.sql.Timestamp
 import java.time.LocalDateTime
 
+/**
+ * L'entite utilisateur (user)
+ */
 data class User(
     var id: Long,
     var username: String,

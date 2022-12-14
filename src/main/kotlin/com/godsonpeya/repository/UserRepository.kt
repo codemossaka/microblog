@@ -3,6 +3,9 @@ package com.godsonpeya.repository
 import com.godsonpeya.bd.Database.USERS
 import com.godsonpeya.entity.User
 
+/**
+ * la couche d'accès aux données
+ */
 class UserRepository : JpaRepository<User, Long> {
     override fun save(e: User): Int {
         USERS.add(e)

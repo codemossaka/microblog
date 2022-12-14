@@ -4,6 +4,9 @@ import com.godsonpeya.bd.Database.POSTS
 import com.godsonpeya.entity.Post
 import com.godsonpeya.repository.PostRepository
 
+/**
+ * La couche de traitement des publication qui fait appel a la couche d'accès aux données  postRepository
+ */
 class PostService(private val postRepository: PostRepository = PostRepository()) {
 
 

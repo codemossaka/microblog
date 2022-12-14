@@ -1,14 +1,16 @@
 package com.godsonpeya
 
-import com.godsonpeya.entity.Post
 import com.godsonpeya.service.PostService
 import com.godsonpeya.service.UserService
 
+/**
+ * couche de présentation qui fait appel aux couches de traitement des utilisateurs et publications  (userService, postService)
+ */
 fun main(args: Array<String>) {
 
 
-    val userService = UserService()
-    val postService = PostService()
+    val userService = UserService() // couche de traitement
+    val postService = PostService() //couche de traitement
 
 
     while (true) {

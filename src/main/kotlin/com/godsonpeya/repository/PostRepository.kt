@@ -3,6 +3,9 @@ package com.godsonpeya.repository
 import com.godsonpeya.bd.Database.POSTS
 import com.godsonpeya.entity.Post
 
+/**
+ * la couche d'accès aux données
+ */
 class PostRepository : JpaRepository<Post, Long> {
 
     override fun save(e: Post): Int {
